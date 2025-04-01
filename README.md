@@ -1,25 +1,41 @@
-# SmartCart Recommender System & Pattern Mining
+# E-Commerce Recommender System & Pattern Mining
 
 ## Overview
-This project implements a recommender system using collaborative filtering and pattern mining techniques for an e-commerce dataset. The implementation covers:
-- **Data Preprocessing**: Loading and cleaning datasets, creating a user-item matrix.
-- **User-Based Collaborative Filtering**: Computing user similarity using cosine similarity and recommending products.
+This project focuses on implementing a personalized recommendation system and pattern mining for e-commerce data. The system utilizes **User-Based Collaborative Filtering** and **Association Rule Mining** to suggest relevant products to users.
 
-## Prerequisites
-Ensure you have the following dependencies installed:
+## Features Implemented
+- **Data Preprocessing & Exploration**: Cleaning and preparing datasets for analysis.
+- **User-Based Collaborative Filtering**: Recommending products based on user similarity (Cosine Similarity).
+- **Association Rule Mining**: Extracting frequent item sets and generating association rules using the Apriori algorithm.
+- **Visualization & Analysis**: Graphical insights into user behavior and recommendations.
+
+## Requirements
+Before running the notebook, ensure you have the following dependencies installed:
+
 ```bash
-pip install pandas numpy scikit-learn seaborn matplotlib
+pip install pandas numpy scikit-learn seaborn matplotlib networkx mlxtend
 ```
 
-## Running the Code
-1. Place the dataset files (`ecommerce_user_data.csv` and `product_details.csv`) in the same directory as the notebook.
-2. Open the Jupyter Notebook and run all cells sequentially.
-3. The script will:
-   - Load and clean the data.
-   - Generate a user similarity heatmap.
-   - Provide product recommendations for a sample user.
+## Quick Start Guide
+1. **Ensure Required Files are Available**:
+   - Place `ecommerce_user_data.csv` and `product_details.csv` in the same directory as `project_notebook.ipynb`.
+2. **Run the Notebook Automatically**:
+   - Open a terminal or command prompt and navigate to the project folder:
+     ```bash
+     jupyter notebook project_notebook.ipynb
+     ```
+   - Execute all cells in sequence to generate recommendations and insights.
 
-## Output
-- **User Similarity Heatmap**: A visualization of user similarities.
-- **Top Product Recommendations**: Displays recommended products for a sample user.
-- **Processed Data**: User-item matrix and cleaned datasets.
+## Expected Output
+- **User-Based Recommendations**: List of top products recommended per user.
+- **Association Rules**: Insights into frequently purchased product combinations.
+- **Visualizations**: Heatmaps, network graphs, and trend analysis plots.
+
+## Contributors
+- [Your Name]
+- [Teammate Names]
+
+## Future Improvements
+- Enhancing recommendation accuracy using hybrid filtering.
+- Implementing deep learning-based recommendation techniques.
+- Expanding datasets for broader insights.
