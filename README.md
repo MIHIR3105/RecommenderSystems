@@ -32,10 +32,8 @@ pip install pandas numpy scikit-learn seaborn matplotlib networkx mlxtend
 - **Visualizations**: Heatmaps, network graphs, and trend analysis plots.
 
 ## Contributors
-- [Your Name]
-- [Teammate Names]
+Mihir Panchal
 
-## Future Improvements
-- Enhancing recommendation accuracy using hybrid filtering.
-- Implementing deep learning-based recommendation techniques.
-- Expanding datasets for broader insights.
+Yashesh Sorathia
+
+Abhi Pareshbhai Patel
