@@ -1,17 +1,20 @@
 # 🛒 SmartCart Recommender System
 This project implements a hybrid recommendation engine for an e-commerce platform using **Collaborative Filtering** and **Association Rule Mining** to recommend products and uncover purchase patterns from real interaction data.
 
----
+---------------------------------------------------------------------------------------------------
+
 
 ## 📂 Project Structure
 RECOMMENDERSYSTEMS/
 │
-├── ecommerce_user_data.csv          # Dataset of user-product ratings & interactions
-├── product_details.csv              # Dataset of product metadata
-├── project_notebook.ipynb           # Main notebook with implementation
-└── README.md                        # Project overview and setup instructions
+├── ecommerce_user_data.csv          # Dataset of user-product interactions
+├── product_details.csv              # Product metadata
+├── project_notebook.ipynb           # Your main implementation notebook
+├── README.md                        # Project overview and instructions
+└── requirements.txt                 # Python dependencies for this project
 
----
+---------------------------------------------------------------------------------------------------
+
 
 ## 📦 Dataset Description
 ### 1. `ecommerce_user_data.csv`
@@ -32,7 +35,8 @@ RECOMMENDERSYSTEMS/
 | ProductName | Name of the product      |
 | Category    | Category (e.g., Electronics) |
 
----
+---------------------------------------------------------------------------------------------------
+
 
 ## 🚀 How to Run the Project
 ### ✅ Prerequisites
@@ -41,6 +45,8 @@ Install the required libraries:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn mlxtend networkx
 : You can use a virtual environment or Jupyter Notebook in VS Code.
+
+---------------------------------------------------------------------------------------------------
 
 
 🧠 Running the Project
@@ -53,6 +59,8 @@ Top-5 product recommendations
 Evaluation using Precision@5
 Frequent itemsets using Apriori
 Association rule visualizations (bar chart & network graph)
+
+---------------------------------------------------------------------------------------------------
 
 
 🧪 Techniques Implemented
@@ -76,6 +84,8 @@ Heatmap of user similarities
 Bar chart of top frequent itemsets
 Network diagram of association rules
 
+---------------------------------------------------------------------------------------------------
+
 
 📊 Key Visual Outputs
 ✅ User Similarity Heatmap
@@ -83,11 +93,15 @@ Network diagram of association rules
 ✅ Top Frequent Itemsets (bar chart)
 ✅ Association Rules (network diagram)
 
+---------------------------------------------------------------------------------------------------
+
 
 🧠 Conceptual Questions (covered in report.pdf)
 How does data sparsity affect recommendations?
 What product bundles were found via Apriori?
 What improvements are recommended for real-world deployment?
+
+---------------------------------------------------------------------------------------------------
 
 
 🧾 Authors & Credits
@@ -98,8 +112,13 @@ Abhibhai Patel     | 40289176   | abhipatel120801@gmail.com
 Yashesh Sorathia   | 40267022   | yashesh.sorathia@gmail.com
 Mihir Panchal      | 40291315   | (email not provided)
 
+---------------------------------------------------------------------------------------------------
+
 
 📬 Feedback & Issues
 For feedback or queries, please contact the team via
 📧 abhipatel120801@gmail.com
 📧 yashesh.sorathia@gmail.com
+📧 XXXXXXXXXXXXXXXXXXXXXXXXX
+
+---------------------------------------------------------------------------------------------------
