@@ -1,39 +1,105 @@
-# E-Commerce Recommender System & Pattern Mining
+# 🛒 SmartCart Recommender System
+This project implements a hybrid recommendation engine for an e-commerce platform using **Collaborative Filtering** and **Association Rule Mining** to recommend products and uncover purchase patterns from real interaction data.
 
-## Overview
-This project focuses on implementing a personalized recommendation system and pattern mining for e-commerce data. The system utilizes **User-Based Collaborative Filtering** and **Association Rule Mining** to suggest relevant products to users.
+---
 
-## Features Implemented
-- **Data Preprocessing & Exploration**: Cleaning and preparing datasets for analysis.
-- **User-Based Collaborative Filtering**: Recommending products based on user similarity (Cosine Similarity).
-- **Association Rule Mining**: Extracting frequent item sets and generating association rules using the Apriori algorithm.
-- **Visualization & Analysis**: Graphical insights into user behavior and recommendations.
+## 📂 Project Structure
+RECOMMENDERSYSTEMS/
+│
+├── ecommerce_user_data.csv          # Dataset of user-product ratings & interactions
+├── product_details.csv              # Dataset of product metadata
+├── project_notebook.ipynb           # Main notebook with implementation
+└── README.md                        # Project overview and setup instructions
 
-## Requirements
-Before running the notebook, ensure you have the following dependencies installed:
+---
+
+## 📦 Dataset Description
+### 1. `ecommerce_user_data.csv`
+
+| Column          | Description                        |
+|-----------------|------------------------------------|
+| UserID          | Unique user identifier             |
+| ProductID       | Unique product identifier          |
+| Rating          | User's rating of the product (1–5) |
+| ProductCategory | Category of the product            |
+| Timestamp       | Time of interaction                |
+
+### 2. `product_details.csv`
+
+| Column      | Description              |
+|-------------|--------------------------|
+| ProductID   | Unique product ID        |
+| ProductName | Name of the product      |
+| Category    | Category (e.g., Electronics) |
+
+---
+
+## 🚀 How to Run the Project
+### ✅ Prerequisites
+Install the required libraries:
 
 ```bash
-pip install pandas numpy scikit-learn seaborn matplotlib networkx mlxtend
-```
+pip install pandas numpy matplotlib seaborn scikit-learn mlxtend networkx
+: You can use a virtual environment or Jupyter Notebook in VS Code.
 
-## Quick Start Guide
-1. **Ensure Required Files are Available**:
-   - Place `ecommerce_user_data.csv` and `product_details.csv` in the same directory as `project_notebook.ipynb`.
-2. **Run the Notebook Automatically**:
-   - Open a terminal or command prompt and navigate to the project folder:
-     ```bash
-     jupyter notebook project_notebook.ipynb
-     ```
-   - Execute all cells in sequence to generate recommendations and insights.
 
-## Expected Output
-- **User-Based Recommendations**: List of top products recommended per user.
-- **Association Rules**: Insights into frequently purchased product combinations.
-- **Visualizations**: Heatmaps, network graphs, and trend analysis plots.
+🧠 Running the Project
+Open enhanced_project_notebook.ipynb in Jupyter or VS Code.
+Run all cells top to bottom.
+You will see:
+Cleaned and structured data
+Cosine-based user similarity
+Top-5 product recommendations
+Evaluation using Precision@5
+Frequent itemsets using Apriori
+Association rule visualizations (bar chart & network graph)
 
-## Contributors
-Mihir Panchal
 
-Yashesh Sorathia
+🧪 Techniques Implemented
+✅ Part 1: Data Preprocessing
+Merged datasets, handled missing values
+Built a user-item matrix
+Created features: interaction count, average rating, user type
 
-Abhi Pareshbhai Patel
+✅ Part 2: Collaborative Filtering
+Cosine similarity between users
+Recommended products based on most similar users
+Evaluated recommendations with Precision@5
+
+✅ Part 3: Association Rule Mining
+Converted interactions into transactions
+Applied Apriori algorithm (support ≥ 0.01)
+Extracted and visualized strong rules using lift
+
+✅ Part 4: Visual Analysis
+Heatmap of user similarities
+Bar chart of top frequent itemsets
+Network diagram of association rules
+
+
+📊 Key Visual Outputs
+✅ User Similarity Heatmap
+✅ Top-5 Product Recommendations (per user)
+✅ Top Frequent Itemsets (bar chart)
+✅ Association Rules (network diagram)
+
+
+🧠 Conceptual Questions (covered in report.pdf)
+How does data sparsity affect recommendations?
+What product bundles were found via Apriori?
+What improvements are recommended for real-world deployment?
+
+
+🧾 Authors & Credits
+Group Members:
+Name               | Student ID | Email                         
+-------------------|------------|------------------------------------------
+Abhibhai Patel     | 40289176   | abhipatel120801@gmail.com
+Yashesh Sorathia   | 40267022   | yashesh.sorathia@gmail.com
+Mihir Panchal      | 40291315   | (email not provided)
+
+
+📬 Feedback & Issues
+For feedback or queries, please contact the team via
+📧 abhipatel120801@gmail.com
+📧 yashesh.sorathia@gmail.com
